@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">List-it</string>
+    <string name="title_activity_diary">DiaryActivity</string>
+</resources>
