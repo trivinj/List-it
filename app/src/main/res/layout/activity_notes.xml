@@ -6,24 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".NotesActivity">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/editNote"
-        android:layout_width="52dp"
-        android:layout_height="51dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="21dp"
-        android:layout_marginEnd="30dp"
-        android:clickable="true"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteX="295dp"
-        tools:layout_editor_absoluteY="433dp" />
-
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="505dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="6dp" />
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:drawSelectorOnTop="false"
+        android:focusable="true"
+        android:listSelector="@android:color/darker_gray"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="61dp"></ListView>
 
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDelete"
+        android:layout_alignBottom="@+id/buttonDelete"
+        android:layout_alignEnd="@+id/buttonNew"
+        android:layout_alignRight="@+id/buttonNew"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Edit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="22dp"
+        android:text="ADD NEW NOTE"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_toLeftOf="@+id/buttonNew"
+        android:layout_toStartOf="@+id/buttonNew"
+        android:text="Delete"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="137dp" />
 </RelativeLayout>
